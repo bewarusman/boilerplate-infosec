@@ -3,6 +3,7 @@ var app = express();
 
 var helmet = require("helmet");
 app.use(helmet());
+app.use(helmet.hidePoweredBy());
 
 module.exports = app;
 var api = require("./server.js");
